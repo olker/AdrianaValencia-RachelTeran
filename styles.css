@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #FFEEDD;
+    color: #c0351d;
+    font-family: 'Times New Roman', Times, serif;
+}
+.continer{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header header header"
+                        "section-1 section-1 menu-derecha"
+                        "section-2 section-2 menu-derecha"
+                        " menu-largo menu-largo menu-largo"
+                        "footer footer footer";
+}
+.header{
+    background: #FFFACD;
+    padding: 20px;
+    border-radius: 4px;
+    border: solid 1px rgb(83, 20, 145);
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+}
+.section-1{
+    background: #EE82EE;
+    padding: 60px 20px;
+    border-radius: 4px;
+    grid-area: section-1;
+    border-radius: 50%;
+    border: solid 1px rgb(46, 15, 76);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.menu-derecha{
+    background: #FFE4B5;
+    padding: 20px;
+    border-radius: 4px;
+    grid-area: menu-derecha;
+    border: solid 1px rgb(125, 22, 92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-derecha img{
+    width: 200px;
+    border-radius: 25px;
+}
+.section-2{
+    background: #FFEBCD;
+    padding: 20px;
+    border-radius: 4px;
+    grid-area: section-2;
+    border: solid 1px rgb(131, 35, 49);
+}
+.section-2 ul{
+    list-style: none;
+    padding-left: 20px;
+}
+.menu-largo{
+    background: #FFEBCD;
+    padding: 20px;
+    border-radius: 4px;
+    grid-area: menu-largo;
+    border: solid 1px rgb(79, 16, 25);
+}
+.footer{
+    background: #FFE4E1;
+    padding: 20px;
+    border-radius: 4px;
+    grid-area: footer;
+    border: solid 1px rgb(56, 11, 100);
+}
+.titulo h1{
+    color:#2e1d9c;
+}
+.logo h1{
+    color: #b82208;
+}
+.header a{
+    color: #9d7852;
+}
+.header a:hover{
+    color: #4608b8;
+}
